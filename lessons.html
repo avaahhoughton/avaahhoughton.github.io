@@ -95,7 +95,36 @@
   .intro-summary { font-size: .95rem; }
 }
 
+/* Match homepage navigation */
+.site-header {
+  z-index: 10;
+  background: rgba(248,243,239,.96);
+  backdrop-filter: blur(12px);
+}
 
+.container {
+  width: min(1150px, calc(100% - 44px));
+}
+
+.nav-wrap {
+  min-height: 78px;
+  gap: 24px;
+}
+
+.brand {
+  font-family: 'Italiana', Georgia, serif;
+  font-size: 1.75rem;
+}
+
+.nav-links {
+  gap: 22px;
+  align-items: center;
+}
+
+.nav-links a {
+  font-size: .77rem;
+  letter-spacing: .1em;
+}
 </style>
 </head>
 <body>
