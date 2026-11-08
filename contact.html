@@ -1,0 +1,277 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Avaah Houghton for wedding and event singing, singing lessons and creative enquiries on the Sunshine Coast.">
+  <title>Contact | Avaah Houghton</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Italiana&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --cream: #f8f3ef;
+      --plum: #5a414a;
+      --ink: #453b3a;
+      --muted: #796d6b;
+      --line: #e7d9d3;
+      --rose: #a77480;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--ink);
+      font: 16px/1.7 'DM Sans', Arial, sans-serif;
+    }
+
+    a { color: inherit; }
+
+    .container {
+      width: min(1150px, calc(100% - 44px));
+      margin-inline: auto;
+    }
+
+    /* Navigation */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(248,243,239,.96);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(12px);
+    }
+
+    .nav-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      min-height: 78px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      flex: 0 0 auto;
+      font-family: 'Italiana', Georgia, serif;
+      font-size: 1.75rem;
+      font-weight: 400;
+      line-height: 1;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .nav-links a {
+      font-size: .77rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    .nav-links a:hover { color: var(--rose); }
+
+    /* Contact */
+    .contact-section {
+      min-height: 680px;
+      display: flex;
+      align-items: center;
+      padding: 100px 0 120px;
+    }
+
+    .contact-content {
+      max-width: 740px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: #906d75;
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      margin: 0 0 24px;
+    }
+
+    h1 {
+      font-family: 'Italiana', Georgia, serif;
+      font-size: clamp(3.5rem, 7vw, 6.5rem);
+      font-weight: 400;
+      line-height: 1.12;
+      color: var(--plum);
+      margin: 0 0 28px;
+    }
+
+    .intro {
+      max-width: 560px;
+      margin: 0 auto 45px;
+      color: var(--muted);
+      line-height: 1.9;
+    }
+
+    .email-button {
+      display: inline-block;
+      padding: 15px 32px;
+      background: var(--plum);
+      color: #fffaf6;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: .13em;
+      font-size: .75rem;
+      transition: background .2s ease;
+    }
+
+    .email-button:hover { background: #805c69; }
+
+    .contact-details {
+      margin-top: 65px;
+      padding-top: 35px;
+      border-top: 1px solid var(--line);
+      display: flex;
+      justify-content: center;
+      gap: 55px;
+      flex-wrap: wrap;
+    }
+
+    .detail-label {
+      font-size: .68rem;
+      text-transform: uppercase;
+      letter-spacing: .17em;
+      color: var(--rose);
+      margin-bottom: 10px;
+    }
+
+    .detail-value {
+      color: var(--plum);
+      font-size: .92rem;
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+
+    .detail-value:hover { color: var(--rose); }
+
+    /* Footer */
+    footer {
+      background: var(--plum);
+      color: #fff4f0;
+      padding: 35px 0;
+    }
+
+    .footer-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    footer p { margin: 0; font-size: .8rem; }
+    footer a { color: inherit; }
+
+    @media (max-width: 850px) {
+      .nav-wrap {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 16px 0;
+      }
+
+      .nav-links { gap: 12px 18px; }
+    }
+
+    @media (max-width: 580px) {
+      .container { width: calc(100% - 32px); }
+      .nav-links a { font-size: .7rem; }
+      .contact-section { padding: 80px 0; }
+      .contact-details { flex-direction: column; gap: 25px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="container nav-wrap" aria-label="Main navigation">
+      <a class="brand" href="index.html">AVAAH HOUGHTON</a>
+
+      <div class="nav-links">
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="creative.html">Creative Work</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-content">
+          <p class="eyebrow">Let's Connect</p>
+
+          <h1>I'd love to hear from you.</h1>
+
+          <p class="intro">
+            Whether you're planning a special occasion,
+            interested in singing lessons, or would simply
+            like to connect, you're warmly invited to get in touch.
+          </p>
+
+          <a class="email-button" href="mailto:avaah.houghton@gmail.com">
+            Send an Email
+          </a>
+
+          <div class="contact-details">
+            <div>
+              <div class="detail-label">Email</div>
+              <a class="detail-value" href="mailto:avaah.houghton@gmail.com">
+                avaah.houghton@gmail.com
+              </a>
+            </div>
+
+            <div>
+              <div class="detail-label">Instagram</div>
+              <a class="detail-value"
+                 href="https://www.instagram.com/avaahhoughton/"
+                 target="_blank" rel="noopener noreferrer">
+                @avaahhoughton
+              </a>
+            </div>
+
+            <div>
+              <div class="detail-label">Location</div>
+              <span class="detail-value">
+                Sunshine Coast, Queensland
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <p>© <span id="year">2026</span> Avaah Houghton. Made with love.</p>
+      <p><a href="index.html">Return to homepage</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
