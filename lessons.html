@@ -25,12 +25,94 @@
 .story-copy p:not(.eyebrow){max-width:740px}
 @media(max-width:850px){.intro-grid{grid-template-columns:1fr;gap:35px}.intro{padding:55px 0 65px}.intro-image{aspect-ratio:5/3;max-height:440px}.story{padding:70px 0}}
 @media(max-width:520px){.intro h1{font-size:3.15rem}.intro-image{aspect-ratio:4/3}}
+
+
+/* Full-width piano hero */
+.intro {
+  position: relative;
+  min-height: 760px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  background: #53474a;
+  color: white;
+  padding: 0;
+}
+
+.intro-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    linear-gradient(90deg,
+      rgba(33,25,29,.72) 0%,
+      rgba(33,25,29,.26) 65%,
+      rgba(33,25,29,.12)),
+    url('singing-lessonss.jpeg') center / cover no-repeat;
+}
+
+.intro-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 150px 0 105px;
+}
+
+.intro .eyebrow {
+  color: #f2dbdd;
+}
+
+.intro h1 {
+  font-family: 'Italiana', Georgia, serif;
+  font-size: clamp(4.8rem, 10vw, 10.5rem);
+  line-height: 1;
+  max-width: 950px;
+  color: white;
+}
+
+.intro h1 em {
+  color: #f0cbd3;
+  font-weight: 400;
+}
+
+.intro-summary {
+  font-size: 1.08rem;
+  max-width: 520px;
+  margin-top: 32px;
+  color: #f7eeee;
+}
+
+@media (max-width: 800px) {
+  .intro { min-height: 650px; }
+  .intro-content { padding: 110px 0 70px; }
+  .intro h1 { font-size: clamp(4.1rem, 12vw, 7rem); }
+}
+
+@media (max-width: 480px) {
+  .intro h1 { font-size: 3.9rem; }
+  .intro-summary { font-size: .95rem; }
+}
+
+
 </style>
 </head>
 <body>
 <header class="site-header"><nav class="wrap nav" aria-label="Main navigation"><a class="brand" href="index.html">AVAAH HOUGHTON</a><div class="links"><a href="about.html">About</a><a href="events.html">Events</a><a href="lessons.html" aria-current="page">Lessons</a><a href="index.html#creative">Creative Work</a><a href="index.html#contact">Contact</a></div></nav></header>
 <main>
-<section class="intro"><div class="wrap intro-grid"><div class="intro-copy"><p class="eyebrow">Singing lessons</p><h1>Find your voice.</h1><p class="intro-summary">Individual singing lessons with Avaah Houghton, a classically trained soprano and educator.</p></div><div class="intro-image"><img src="singing-lessonss.jpeg" alt="Piano keys in warm light"></div></div></section>
+
+<section class="intro">
+  <div class="intro-image" role="img" aria-label="Piano keys in warm light"></div>
+  <div class="wrap intro-content">
+    <p class="eyebrow">Singing lessons</p>
+    <h1>Find your <em>voice.</em></h1>
+    <p class="intro-summary">
+      Individual singing lessons with Avaah Houghton,
+      a classically trained soprano and educator.
+    </p>
+  </div>
+</section>
+
 <section class="story"><div class="wrap story-grid"><div class="story-copy"><p class="eyebrow">My approach</p><h2>A little room to make music.</h2><p>Whether you're singing for the first time or returning to something you've always loved, lessons are an opportunity to explore your voice at your own pace.</p><p>My teaching draws on classical vocal training, performance experience and a background in education. I aim to create a welcoming space where curiosity, technique and musical expression can grow together.</p><p>We'll work with your interests and goals, while making space for the simple pleasure of singing.</p></div></div></section>
 <section class="experience"><div class="wrap"><div class="experience-head"><div><p class="eyebrow">Inside a lesson</p><h2>Where we begin.</h2></div><p>There isn't one single path to finding your voice. We can shape lessons around your experience, interests and what you'd like to explore.</p></div><div class="steps"><div class="step"><span class="num">01</span><h3>Get comfortable</h3><p>Gentle warm-ups, breath awareness and exercises to help you become more familiar with your voice.</p></div><div class="step"><span class="num">02</span><h3>Build your skills</h3><p>Explore pitch, tone, technique and musical confidence, with guidance suited to your stage of learning.</p></div><div class="step"><span class="num">03</span><h3>Make it yours</h3><p>Bring music you enjoy, try something new and discover more freedom in how you express yourself through song.</p></div></div></div></section>
 <section class="details"><div class="wrap details-grid"><div><p class="eyebrow">The practical details</p><h2>Lessons &amp; rates.</h2><p>Individual singing lessons are held at my home studio near Coolum on the Sunshine Coast.</p><p>Lessons can be tailored to beginners, returning singers and those wishing to continue developing their voice.</p></div><div><div class="price-row"><span>30-minute lesson</span><strong>$50</strong></div><div class="price-row"><span>45-minute lesson</span><strong>$70</strong></div><div class="price-row"><span>60-minute lesson</span><strong>$90</strong></div><p class="fine">All prices in AUD. Please get in touch to discuss lesson availability and which duration may suit you.</p></div></div></section>
