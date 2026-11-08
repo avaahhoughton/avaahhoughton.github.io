@@ -68,6 +68,92 @@
     line-height: 1.12;
   }
 }
+
+ 
+/* Full-width editorial homepage hero */
+.hero {
+  position: relative;
+  min-height: 760px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  background: #53474a;
+  color: white;
+}
+
+.hero-image {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg,
+      rgba(33,25,29,.72) 0%,
+      rgba(33,25,29,.26) 62%,
+      rgba(33,25,29,.12)),
+    url('avaah-portrait.jpg') center 34% / cover no-repeat;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  padding: 150px 0 105px;
+}
+
+.hero .eyebrow {
+  color: #f2dbdd;
+}
+
+.hero h1 {
+  font-family: 'Italiana', Georgia, serif;
+  font-size: clamp(4.8rem, 10vw, 10.5rem);
+  line-height: 1;
+  max-width: 920px;
+  letter-spacing: -.025em;
+  color: white;
+}
+
+.hero h1 em {
+  display: block;
+  color: #f0cbd3;
+  font-weight: 400;
+}
+
+.hero-description {
+  font-size: 1.08rem;
+  max-width: 520px;
+  margin: 32px 0 34px;
+  color: #f7eeee;
+}
+
+.hero .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.hero .button {
+  background: #fff8f3;
+  color: #543a47;
+}
+
+.hero .button.outline {
+  background: transparent;
+  color: white;
+  border: 1px solid rgba(255,255,255,.8);
+}
+
+@media (max-width: 800px) {
+  .hero { min-height: 650px; }
+  .hero-inner { padding: 110px 0 70px; }
+  .hero h1 { font-size: clamp(4.1rem, 12vw, 7rem); }
+  .hero-image { background-position: 60% center; }
+}
+
+@media (max-width: 480px) {
+  .hero h1 { font-size: 3.9rem; }
+  .hero-description { font-size: .95rem; }
+}
+ 
+  
   </style>
 </head>
 <body>
