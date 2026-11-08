@@ -1,0 +1,210 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Creative work, art and artistic explorations by Avaah Houghton.">
+  <title>Creative Work | Avaah Houghton</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Italiana&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --cream: #f8f3ef;
+      --paper: #fffaf6;
+      --plum: #5a414a;
+      --ink: #453b3a;
+      --muted: #796d6b;
+      --line: #e7d9d3;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--ink);
+      font: 16px/1.7 'DM Sans', Arial, sans-serif;
+    }
+
+    a { color: inherit; }
+
+    .container {
+      width: min(1150px, calc(100% - 44px));
+      margin-inline: auto;
+    }
+
+    /* Navigation */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(248,243,239,.96);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(12px);
+    }
+
+    .nav-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      min-height: 78px;
+    }
+
+    .brand {
+      font-family: 'Italiana', Georgia, serif;
+      font-size: 1.75rem;
+      font-weight: 400;
+      line-height: 1;
+      text-decoration: none;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 22px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      font-size: .77rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    .nav-links a:hover { color: #a16e7c; }
+
+    /* Creative Work introduction */
+    .creative-intro {
+      min-height: 650px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .creative-content {
+      max-width: 780px;
+    }
+
+    .eyebrow {
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: .24em;
+      text-transform: uppercase;
+      color: #82656c;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-family: 'Italiana', Georgia, serif;
+      font-size: clamp(4rem, 8vw, 7.5rem);
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: -.025em;
+      color: var(--plum);
+      margin: 0 0 22px;
+    }
+
+    .coming-soon {
+      font-family: 'Italiana', Georgia, serif;
+      font-size: 2.5rem;
+      font-style: italic;
+      color: #a77480;
+      margin: 0 0 28px;
+    }
+
+    .description {
+      color: var(--muted);
+      max-width: 500px;
+      margin: 0 auto;
+      line-height: 1.9;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--plum);
+      color: #fff4f0;
+      padding: 35px 0;
+    }
+
+    .footer-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    footer p { margin: 0; font-size: .8rem; }
+    footer a { color: inherit; }
+
+    @media (max-width: 850px) {
+      .nav-wrap {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 16px 0;
+      }
+
+      .nav-links { gap: 12px 18px; }
+      .creative-intro { min-height: 550px; }
+    }
+
+    @media (max-width: 580px) {
+      .container { width: calc(100% - 32px); }
+      .nav-links a { font-size: .7rem; }
+      h1 { font-size: clamp(3.5rem, 12vw, 5rem); }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="container nav-wrap" aria-label="Main navigation">
+      <a class="brand" href="index.html">AVAAH HOUGHTON</a>
+
+      <div class="nav-links">
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="creative.html" aria-current="page">Creative Work</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="creative-intro">
+      <div class="creative-content">
+        <p class="eyebrow">Art · Music · Expression</p>
+        <h1>A creative life.</h1>
+        <p class="coming-soon">Coming soon.</p>
+        <p class="description">
+          A collection of artistic projects, explorations and creative work.
+          More to share here soon.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <p>© <span id="year">2026</span> Avaah Houghton. Made with love.</p>
+      <p><a href="index.html">Return to homepage</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
